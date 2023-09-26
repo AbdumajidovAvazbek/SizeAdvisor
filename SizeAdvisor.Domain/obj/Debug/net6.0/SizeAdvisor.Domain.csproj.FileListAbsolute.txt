@@ -1,0 +1,11 @@
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\bin\Debug\net6.0\SizeAdvisor.Domain.deps.json
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\bin\Debug\net6.0\SizeAdvisor.Domain.dll
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\bin\Debug\net6.0\SizeAdvisor.Domain.pdb
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.AssemblyInfoInputs.cache
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.AssemblyInfo.cs
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.csproj.CoreCompileInputs.cache
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.dll
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\refint\SizeAdvisor.Domain.dll
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\SizeAdvisor.Domain.pdb
+C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Domain\obj\Debug\net6.0\ref\SizeAdvisor.Domain.dll

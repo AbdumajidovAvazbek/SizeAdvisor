@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="SizeAdvisor.Desktop.Companents.SizeRoom"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SizeAdvisor.Desktop.Companents"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Source="C:\Desktop\SizeAdvisor\SizeAdvisor.Desktop\Resources\futbolka.jpg" Grid.Row="0"/>
+            <Image Source="C:\Desktop\SizeAdvisor\SizeAdvisor.Desktop\Resources\Shim.jpg" Grid.Row="1"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock 
+            TextElement.FontSize="25"
+            TextElement.Foreground="Black"
+            Grid.Row="0"
+            Height="200"
+            Width="600"
+            TextAlignment="Center"
+            Text="Sizga shu razmerdagi futbolka tushadi" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Foreground="Snow" 
+            FontWeight="DemiBold"
+            Margin="10"/>
+            <TextBlock
+            Grid.Row="1"
+            TextElement.FontSize="25"
+            TextElement.Foreground="Black"
+            TextElement.FontFamily="blue"
+            Height="200"
+            Width="600"
+            TextAlignment="Center"
+            Text="Sizga shu razmerdagi shim tushadi" 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Foreground="Snow" 
+            FontWeight="DemiBold"
+            Margin="10"/>
+        </Grid>
+    </Grid>
+</UserControl>

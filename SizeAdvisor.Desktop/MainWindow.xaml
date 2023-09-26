@@ -1,0 +1,222 @@
+﻿<Window x:Class="SizeAdvisor.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:md ="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:SizeAdvisor.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:companent ="clr-namespace:SizeAdvisor.Desktop.Companents">
+    <Grid Background="#F3F6EA">
+        <TabControl x:Name="mainTapControl">
+            <TabItem Header="Head" TabIndex="0">
+                <Border
+                        CornerRadius="10"
+                        Background="Snow"
+                        Width="300" Height="400">
+                    <StackPanel >
+                        <Button
+                             Click="SignInClick"
+                             Height="50"
+                             Width="200"
+                             Background="SkyBlue"
+                             TextBlock.FontStyle="Italic"
+                             TextBlock.FontSize="20"
+                             TextBlock.Foreground="White"
+                             TextBlock.TextAlignment="Center"
+                             Margin="50"
+                             Content="Sign in"
+                        />
+                        <Button
+                            Click="SignUpClick"
+                            Height="50"
+                            Width="200"
+                            Background="SkyBlue"
+                            TextBlock.FontStyle="Italic"
+                            TextBlock.FontSize="20"
+                            TextBlock.Foreground="White"
+                            TextBlock.TextAlignment="Center"
+                            Content="Sign up"
+                            RenderTransformOrigin="0.509,3.254" />
+                    </StackPanel>
+                </Border>
+            </TabItem>
+            <TabItem Header="Sign Up" TabIndex="1">
+                <Grid Background="#BBD4EC">
+                    <Border
+                         CornerRadius="10"
+                         Background="White"
+                         Width="300"
+                         Height="450"
+                         Margin="70,3,97,3">
+                        <StackPanel>
+                            <TextBox 
+                                 Name="isimOlish"
+                                 Background="WhiteSmoke"
+                                 Width="220"
+                                 Height="40"
+                                 Margin="10,20,10,10"
+                                 FontSize="25"
+                                 TextBlock.FontStyle="Italic"
+                                 Opacity="0.3"
+                                 md:HintAssist.Hint="Ism" />
+                            <TextBox 
+                                Name="familyaOlish"
+                                Background="WhiteSmoke"
+                                Width="220"
+                                Height="40"
+                                Margin="10,20,10,10"
+                                FontSize="25"
+                                TextBlock.FontStyle="Italic"
+                                Opacity="0.3"
+                                md:HintAssist.Hint="familya" />
+                            <TextBox 
+                                 x:Name="emailOlish"
+                                 Background="WhiteSmoke"
+                                 Width="220"
+                                 Height="40"
+                                 Margin="10,20,10,10"
+                                 FontSize="25"
+                                 TextBlock.FontStyle="Italic"
+                                 Opacity="0.5"
+                                 md:HintAssist.Hint="email" />
+                            <TextBox 
+                                 x:Name="password"
+                                 Background="WhiteSmoke"
+                                 Width="220"
+                                 Height="40"
+                                 Margin="10,20,10,10"
+                                 FontSize="25"
+                                 TextBlock.FontStyle="Italic"
+                                 Opacity="0.5"
+                                 md:HintAssist.Hint="password" />
+                            <TextBox 
+                                 Background="WhiteSmoke"
+                                 Width="220"
+                                 Height="45"
+                                 Margin="10,20,10,10"
+                                 FontSize="25"
+                                 TextBlock.FontStyle="Italic"
+                                 Opacity="0.5"
+                                 md:HintAssist.Hint="password again" />
+                            <Button
+                                 Click="QoshishClick"
+                                 Name="Qoshish"
+                                 Cursor="Hand"
+                                 Height="40"
+                                 Width="200"
+                                 Margin="10,20,10,60"
+                                 Background="SkyBlue"
+                                 TextBlock.FontStyle="Italic"
+                                 TextBlock.FontSize="20"
+                                 TextBlock.Foreground="White"
+                                 TextBlock.TextAlignment="Center"
+                                 Content="Sign Up"
+                                 md:ButtonAssist.CornerRadius="5" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Sign In" TabIndex="2">
+                <Grid Background="#BBD4EC">
+                    <Border
+                     CornerRadius="10"
+                     Background="White"
+                     Width="300"
+                     Height="450"
+                     Margin="70,3,97,3">
+                        <StackPanel>
+                            <TextBox 
+                             Name="emailniKirtish"
+                             Background="WhiteSmoke"
+                             Width="220"
+                             Height="50"
+                             Margin="10,20,10,10"
+                             FontSize="25"
+                             TextBlock.FontStyle="Italic"
+                             Opacity="0.3"
+                             md:HintAssist.Hint="email" />
+                            <TextBox 
+                            Name="passwordniKiritish"
+                            Background="WhiteSmoke"
+                            Width="220"
+                            Height="50"
+                            Margin="10,20,10,10"
+                            FontSize="25"
+                            TextBlock.FontStyle="Italic"
+                            Opacity="0.3"
+                            md:HintAssist.Hint="password" />
+                            <Button
+                             Click="OkClick"
+                             Name="Ok"
+                             Cursor="Hand"
+                             Height="50"
+                             Width="200"
+                             Margin="10,20,10,60"
+                             Background="SkyBlue"
+                             TextBlock.FontStyle="Italic"
+                             TextBlock.FontSize="25"
+                             TextBlock.Foreground="White"
+                             TextBlock.TextAlignment="Center"
+                             Content="Ok"
+                             md:ButtonAssist.CornerRadius="5" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </TabItem>
+            <TabItem Header=" mos razmerlar" TabIndex="3">
+                <StackPanel Grid.Row="1" Margin="10 0 10 0">
+                    <companent:SizeRoom/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Razmerni olish" TabIndex="4">
+                <Grid Background="#BBD4EC">
+                    <Border
+                      CornerRadius="10"
+                      Background="White"
+                      Width="300"
+                      Height="450"
+                      Margin="70,3,97,3">
+                        <StackPanel>
+                            <TextBox 
+                                  x:Name="Ogirlik"
+                                  Background="WhiteSmoke"
+                                  Width="220"
+                                  Height="50"
+                                  Margin="10,20,10,10"
+                                  FontSize="25"
+                                  TextBlock.FontStyle="Italic"
+                                  Opacity="0.3"
+                                  md:HintAssist.Hint="vazni kiriting" />
+                            <TextBox 
+                                 x:Name="Balanlik"
+                                 Background="WhiteSmoke"
+                                 Width="220"
+                                 Height="50"
+                                 Margin="10,20,10,10"
+                                 FontSize="25"
+                                 TextBlock.FontStyle="Italic"
+                                 Opacity="0.3"
+                                 md:HintAssist.Hint="boyingizni kiriting" />
+                            <Button
+                                  Click="RazmerniOlish"
+                                  Name="RazmerOlindi"
+                                  Cursor="Hand"
+                                  Height="50"
+                                  Width="200"
+                                  Margin="10,20,10,60"
+                                  Background="SkyBlue"
+                                  TextBlock.FontStyle="Italic"
+                                  TextBlock.FontSize="25"
+                                  TextBlock.Foreground="White"
+                                  TextBlock.TextAlignment="Center"
+                                  Content="Ok"
+                                  md:ButtonAssist.CornerRadius="5" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
