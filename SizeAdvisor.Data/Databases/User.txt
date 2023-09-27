@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "FirstName": "avazbek",
+    "LastName": "Abdumajidov",
+    "Email": "aa@",
+    "Password": "123",
+    "Id": 1,
+    "CreatedAt": "2023-09-26T21:05:30.7142133Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "Avazbek",
+    "LastName": "Abdumajidov",
+    "Email": "aqa@",
+    "Password": "123a",
+    "Id": 2,
+    "CreatedAt": "2023-09-26T21:48:39.6966661Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "wertyu",
+    "LastName": "tgyguyg",
+    "Email": "aaw@",
+    "Password": "1221",
+    "Id": 3,
+    "CreatedAt": "2023-09-27T00:12:43.1746131Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "as",
+    "LastName": "das",
+    "Email": "das",
+    "Password": "13",
+    "Id": 4,
+    "CreatedAt": "2023-09-27T00:52:03.2208652Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "sa",
+    "LastName": "ad",
+    "Email": "das3",
+    "Password": "22",
+    "Id": 5,
+    "CreatedAt": "2023-09-27T01:05:52.6216643Z",
+    "UpdatedAt": null
+  }
+]

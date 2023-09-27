@@ -1,27 +1,13 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Data;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Shapes;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows.Documents;
 using SizeAdvisor.Service.Dtos;
-using System.Windows.Navigation;
-using System.Collections.Generic;
-using System.Windows.Media.Imaging;
 using SizeAdvisor.Service.Services;
 using SizeAdvisor.Service.Interfaces;
-using SizeAdvisor.Domain.Entities;
+using System.Windows.Documents;
+using System.Collections.Generic;
 
 namespace SizeAdvisor.Desktop
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private readonly IUserService userService = new UserService();
@@ -29,6 +15,7 @@ namespace SizeAdvisor.Desktop
         {
             InitializeComponent();
         }
+
         private async void OkClick(object sender, RoutedEventArgs e)
         {
             try
@@ -36,39 +23,53 @@ namespace SizeAdvisor.Desktop
                 ForCheckedDto checkedDto = new ForCheckedDto()
                 {
                     email = emailniKirtish.Text,
-                    password = passwordniKiritish.Text,
+                    password = passwordniKiritish.Password
                 };
-                bool avialibe = await userService.IsThereAsync(checkedDto);
-               
-                  mainTapControl.SelectedIndex = 4;
+                bool available = await userService.IsThereAsync(checkedDto);
+
+                if (available)
+                {
+                    mainTapControl.SelectedIndex = 4;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid email or password.");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
-        private async void SignInClick(object sender, RoutedEventArgs e)
+
+        private void SignInClick(object sender, RoutedEventArgs e)
         {
             mainTapControl.SelectedIndex = 2;
         }
-        private async void SignUpClick(object sender, RoutedEventArgs e)
+
+        private void SignUpClick(object sender, RoutedEventArgs e)
         {
             mainTapControl.SelectedIndex = 1;
         }
+
         public async void QoshishClick(object sender, RoutedEventArgs e)
         {
             try
             {
-                UserForCreationDto user = new UserForCreationDto()
+                if (password.Password == againPassword.Password)
                 {
-                    Email = emailOlish.Text,
-                    FirstName = isimOlish.Text,
-                    LastName = familyaOlish.Text,
-                    Password = password.Text,
-                };
-                await userService.CreateAsync(user);
-                mainTapControl.SelectedIndex = 4;
+                    UserForCreationDto user = new UserForCreationDto()
+                    {
+                        Email = emailOlish.Text,
+                        FirstName = isimOlish.Text,
+                        LastName = familyaOlish.Text,
+                        Password = password.Password
+                    };
+                    await userService.CreateAsync(user);
+                    mainTapControl.SelectedIndex = 4;
+                }
+                else
+                    MessageBox.Show("Passwordni togri kiriting iltimos");
 
             }
             catch (Exception ex)
@@ -76,7 +77,8 @@ namespace SizeAdvisor.Desktop
                 MessageBox.Show(ex.Message);
             }
         }
-        public async void RazmerniOlish(object sender, RoutedEventArgs e)
+
+        public  void RazmerniOlish(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -85,16 +87,37 @@ namespace SizeAdvisor.Desktop
                     Height = decimal.Parse(Ogirlik.Text),
                     Weight = decimal.Parse(Balanlik.Text),
                 };
+                string[] razmerlar = { "XS", "S", "M", "L", "XL", "XXL", "XXXL", "4XL" };
+
+                string razmer = string.Empty;
+
+                if (userSize.Height > 135 || (userSize.Height <= 140 && userSize.Weight > 25) || (userSize.Height <= 140 && userSize.Weight <= 30))
+                    razmer = $"Futbolka : {razmerlar[0]} \n Shim : S ";
+                else if (userSize.Height > 140 || (userSize.Height <= 145 && userSize.Weight > 30) || (userSize.Height <= 145 && userSize.Weight <= 35))
+                    razmer = $"Futbolka : {razmerlar[1]} \n Shim : M ";
+                else if  (userSize.Height > 145 || (userSize.Height <= 150 && userSize.Weight > 35) || (userSize.Height <= 150 && userSize.Weight <= 45))
+                    razmer = $"Futbolka : {razmerlar[2]} \n Shim : L ";
+                else if (userSize.Height > 150 || (userSize.Height <= 155 && userSize.Weight > 45) || (userSize.Height <= 155 && userSize.Weight <= 55))
+                    razmer = $"Futbolka : {razmerlar[3]} \n Shim : XL ";
+                else if (userSize.Height > 155 || (userSize.Height <= 165 && userSize.Weight > 55) || (userSize.Height <= 165 && userSize.Weight <= 60))
+                    razmer = $"Futbolka : {razmerlar[4]} \n Shim : XXL ";
+                else if (userSize.Height > 165 || (userSize.Height <= 170 && userSize.Weight > 60) || (userSize.Height <= 170 && userSize.Weight <= 80))
+                    razmer = $"Futbolka : {razmerlar[5]} \n Shim : XXXL ";
+                else if (userSize.Height > 170 || (userSize.Height <= 175 && userSize.Weight > 80) || (userSize.Height <= 175 && userSize.Weight <= 100))
+                    razmer = $"Futbolka : {razmerlar[6]} \n Shim : XXXL ";
+                else if (userSize.Height > 175 || (userSize.Height <= 185 && userSize.Weight > 100) || (userSize.Height <= 185 && userSize.Weight <= 120))
+                    razmer = $"Futbolka : {razmerlar[7]} \n Shim : XXXL ";
+                else
+                    MessageBox.Show("Bu bo'y va vazn bilan faqatgini kiyimni tiktirishingiz mumkun xalos");
                 mainTapControl.SelectedIndex = 3;
+
+                MessageBox.Show(razmer);
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-             
-
         }
     }
 }
