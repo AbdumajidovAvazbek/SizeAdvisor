@@ -19,7 +19,7 @@ namespace SizeAdvisor.Desktop.Companents
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
                 decimal height = decimal.Parse(mainWindow.Balanlik.Text);
                 decimal weight = decimal.Parse(mainWindow.Ogirlik.Text);
-
+             
                 string[] sizes = CalculateSizes(height, weight);
                 futbolkaSize.Text = sizes[0].ToString();
                 shimSize.Text = sizes[1].ToString();

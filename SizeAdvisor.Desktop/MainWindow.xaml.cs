@@ -80,7 +80,14 @@ namespace SizeAdvisor.Desktop
         }
        public  void RazmerniOlish(object sender, RoutedEventArgs e)
         {
+            try
+            {
                 mainTapControl.SelectedIndex = 3;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         public void MenuBtnClick(object sender, RoutedEventArgs e)
         {
