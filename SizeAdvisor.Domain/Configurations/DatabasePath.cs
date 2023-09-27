@@ -8,6 +8,6 @@ namespace SizeAdvisor.Domain.Configurations
 {
     public class DatabasePath
     {
-        public const string UserDb = "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\Databases\\User.txt";
+        public const string UserDb = "../../../../SizeAdvisor.Data/Databases/User.txt";
     }
 }

@@ -80,6 +80,7 @@ namespace SizeAdvisor.Service.Services
 
             throw new NotImplementedException();
         }
+       
         public async Task<UserForResultDto> UpdateAsync(UserForUpdate dto)
         {
             var user = await userRepository.SelecttByIdAsync(dto.Id);

@@ -10,7 +10,9 @@
         xmlns:companent="clr-namespace:SizeAdvisor.Desktop.Companents">
     <Grid Background="#4CAF50">
         <TabControl x:Name="mainTapControl" Background="#FFFFFF">
-            <TabItem Header="Home" TabIndex="0">
+            <TabItem Header="Home"
+                     Visibility="Hidden"
+                     TabIndex="0">
                 <Border CornerRadius="10"
                         Background="#FFFFFF"
                         Width="300" Height="400">
@@ -35,7 +37,9 @@
                     </StackPanel>
                 </Border>
             </TabItem>
-            <TabItem Header="Sign Up" TabIndex="1">
+            <TabItem Header="Sign Up" 
+                      Visibility="Hidden"
+                     TabIndex="1">
                 <Grid Background="#4CAF50">
                     <Border CornerRadius="10"
                             Background="#FFFFFF"
@@ -98,7 +102,9 @@
                     </Border>
                 </Grid>
             </TabItem>
-            <TabItem Header="Sign In" TabIndex="2">
+            <TabItem Header="Sign In" 
+                      Visibility="Hidden"
+                     TabIndex="2">
                 <Grid Background="#4CAF50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="287*"/>
@@ -137,14 +143,28 @@
                                     Foreground="#FFFFFF"
                                     FontSize="25"
                                     Content="Sign In" />
+                            <Button 
+                                    Name="menu"
+                                    Click="MenuBtnClick"
+                                    Cursor="Hand"
+                                    Height="50"
+                                    Width="200"
+                                    Margin="10,20,10,60"
+                                    Background="#FFFFFFFF"
+                                    Foreground="#4CAF50"
+                                    FontSize="25"
+                                    Content="Menu" />
                         </StackPanel>
                     </Border>
                 </Grid>
             </TabItem>
-            <TabItem Header="Size Recommendations" TabIndex="3">
+            <TabItem Header="Size Recommendations"
+                      Visibility="Hidden"
+                     TabIndex="3">
                 <StackPanel Grid.Row="1" Margin="10 0 10 0">
-                    <Button Click="RazmerniOlish"
+                    <Button 
                         Name="menuga"
+                        Click="MenuBtnClick"
                         Cursor="Hand"
                         Height="50"
                         Width="200"
@@ -152,11 +172,13 @@
                         Background="#FFFFFFFF"
                         Foreground="#4CAF50"
                         FontSize="25"
-                        Content="Get Size" />
+                        Content="Menu" />
                     <companent:SizeRoom/>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Get Your Size" TabIndex="4">
+            <TabItem Header="Get Your Size" 
+                      Visibility="Hidden"
+                     TabIndex="4">
                 <Grid Background="#4CAF50">
                     <Border CornerRadius="10"
                             Background="#FFFFFF"
@@ -180,7 +202,8 @@
                                      Margin="10,20,10,10"
                                      FontSize="25"
                                       />
-                            <Button Click="RazmerniOlish"
+                            <Button 
+                                    Click="RazmerniOlish"
                                     Name="RazmerOlindi"
                                     Cursor="Hand"
                                     Height="50"

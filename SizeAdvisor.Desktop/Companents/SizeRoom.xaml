@@ -5,25 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:SizeAdvisor.Desktop.Companents"
              mc:Ignorable="d"
+             Loaded="UserControl_Loaded"
              d:DesignHeight="450"
              d:DesignWidth="800">
-    
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF4CAF50" Offset="0"/>
+                <GradientStop Color="#FFBFD3C1" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
+        
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Image Source="C:\Desktop\SizeAdvisor\SizeAdvisor.Desktop\Resources\futbolka.jpg" Grid.Row="0"/>
-            <Image Source="C:\Desktop\SizeAdvisor\SizeAdvisor.Desktop\Resources\Shim.jpg" Grid.Row="1"/>
+            <Image Source="C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Desktop\Resources\futbolka.jpg"
+                   Grid.Row="0" Stretch="UniformToFill"/>
+            <Image Source="C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Desktop\Resources\Shim.jpg" 
+                   Grid.Row="1" Stretch="UniformToFill"/>
         </Grid>
-
+        
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -32,37 +41,11 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0"
-                       Text="Sizga shu razmerdagi futbolka tushadi"
-                       TextAlignment="Center"
-                       FontWeight="DemiBold"
-                       FontSize="25"
-                       Foreground="Snow"
-                       Margin="10"/>
-            <TextBlock Grid.Row="1"
-                       TextAlignment="Center"
-                       FontWeight="DemiBold"
-                       FontSize="25"
-                       Foreground="Snow"
-                       Margin="10"/>
+            <TextBlock Grid.Row="0" Text="T-shirt Size" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
+            <TextBlock x:Name="futbolkaSize" Grid.Row="1" Text="XS" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
 
-            <TextBlock Grid.Row="2"
-                       Text="Sizga shu razmerdagi shim tushadi"
-                       TextAlignment="Center"
-                       FontWeight="DemiBold"
-                       FontSize="25"
-                       Foreground="Snow"
-                       Margin="10"/>
-            <TextBlock Grid.Row="3"
-                       Text =" "
-                       
-                       
-                       TextAlignment="Center"
-                       FontWeight="DemiBold"
-                       FontSize="25"
-                       Foreground="Snow"
-                       Margin="10"/>
-            
+            <TextBlock Grid.Row="2" Text="Pant Size" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
+            <TextBlock Name="shimSize" Grid.Row="3" Text="S" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
         </Grid>
     </Grid>
 </UserControl>

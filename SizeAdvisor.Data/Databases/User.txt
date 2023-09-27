@@ -43,5 +43,104 @@
     "Id": 5,
     "CreatedAt": "2023-09-27T01:05:52.6216643Z",
     "UpdatedAt": null
+  },
+  {
+    "FirstName": "as",
+    "LastName": "dwq",
+    "Email": "sw",
+    "Password": "122",
+    "Id": 6,
+    "CreatedAt": "2023-09-27T06:13:00.147874Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "sdfgh",
+    "LastName": "fghj",
+    "Email": "fghj",
+    "Password": "12",
+    "Id": 7,
+    "CreatedAt": "2023-09-27T07:55:04.0182605Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "avazbek",
+    "LastName": "abdumajidov",
+    "Email": "abdumaidov@",
+    "Password": "123",
+    "Id": 8,
+    "CreatedAt": "2023-09-27T08:45:26.1200408Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "werwer",
+    "LastName": "twe",
+    "Email": "tew",
+    "Password": "1221",
+    "Id": 9,
+    "CreatedAt": "2023-09-27T08:50:14.412531Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "sdfas",
+    "LastName": "fdsf",
+    "Email": "f",
+    "Password": "1",
+    "Id": 10,
+    "CreatedAt": "2023-09-27T08:59:04.3010698Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "ew",
+    "LastName": "erw",
+    "Email": "few",
+    "Password": "1",
+    "Id": 11,
+    "CreatedAt": "2023-09-27T09:01:14.8578437Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "rtyui",
+    "LastName": "ghkn",
+    "Email": "tfyg",
+    "Password": "12",
+    "Id": 12,
+    "CreatedAt": "2023-09-27T09:04:33.4835724Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "dfgh",
+    "LastName": "fghj",
+    "Email": "fgh",
+    "Password": "12",
+    "Id": 13,
+    "CreatedAt": "2023-09-27T09:07:59.6630207Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "rtyui",
+    "LastName": "fghjk",
+    "Email": "fghk",
+    "Password": "12",
+    "Id": 14,
+    "CreatedAt": "2023-09-27T09:09:35.998279Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "dsfer",
+    "LastName": "das",
+    "Email": "dwq",
+    "Password": "2",
+    "Id": 15,
+    "CreatedAt": "2023-09-27T09:10:38.4996953Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "fw",
+    "LastName": "rew",
+    "Email": "rwe",
+    "Password": "12",
+    "Id": 16,
+    "CreatedAt": "2023-09-27T09:13:32.6019627Z",
+    "UpdatedAt": null
   }
 ]
