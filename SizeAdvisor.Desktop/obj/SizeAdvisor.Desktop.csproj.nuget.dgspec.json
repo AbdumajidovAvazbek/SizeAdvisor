@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj": {}
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj": {}
   },
   "projects": {
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj": {
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj",
+        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj",
         "projectName": "SizeAdvisor.Data",
-        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj",
+        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\obj\\",
+        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
-                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj"
+              "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
+                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj": {
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj",
+        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj",
         "projectName": "SizeAdvisor.Desktop",
-        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj",
+        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Desktop\\SizeAdvisor.Desktop.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Desktop\\obj\\",
+        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Desktop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -101,8 +101,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj": {
-                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj"
+              "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj": {
+                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj"
               }
             }
           }
@@ -145,14 +145,14 @@
         }
       }
     },
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
+        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
         "projectName": "SizeAdvisor.Domain",
-        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
+        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\obj\\",
+        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -204,14 +204,14 @@
         }
       }
     },
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj": {
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj",
+        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj",
         "projectName": "SizeAdvisor.Service",
-        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj",
+        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\SizeAdvisor.Service.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Service\\obj\\",
+        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -232,8 +232,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj": {
-                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj"
+              "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj": {
+                "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Data\\SizeAdvisor.Data.csproj"
               }
             }
           }

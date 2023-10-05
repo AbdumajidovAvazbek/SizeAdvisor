@@ -69,7 +69,7 @@ namespace SizeAdvisor.Desktop.Companents {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SizeAdvisor.Desktop;component/companents/sizeroom.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SizeAdvisor.Desktop;V1.0.0.0;component/companents/sizeroom.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Companents\SizeRoom.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {}
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
+    "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
+        "projectUniqueName": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
         "projectName": "SizeAdvisor.Domain",
-        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
+        "projectPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\SizeAdvisor.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor\\SizeAdvisor.Domain\\obj\\",
+        "outputPath": "C:\\Desktop\\New folder\\SizeAdvisor - Copy\\SizeAdvisor.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
