@@ -42,10 +42,9 @@
             </Grid.RowDefinitions>
 
             <TextBlock Grid.Row="0" Text="T-shirt Size" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
-            <TextBlock x:Name="futbolkaSize" Grid.Row="1" Text="XS" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
-
+            <TextBlock x:Name="futbolkaSize" Grid.Row="1" Text=" " TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
             <TextBlock Grid.Row="2" Text="Pant Size" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
-            <TextBlock Name="shimSize" Grid.Row="3" Text="S" TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
+            <TextBlock Name="shimSize" Grid.Row="3" Text=" " TextAlignment="Center" FontWeight="DemiBold" FontSize="25" Foreground="White" Margin="10"/>
         </Grid>
     </Grid>
 </UserControl>

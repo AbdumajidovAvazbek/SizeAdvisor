@@ -142,5 +142,50 @@
     "Id": 16,
     "CreatedAt": "2023-09-27T09:13:32.6019627Z",
     "UpdatedAt": null
+  },
+  {
+    "FirstName": "ssd",
+    "LastName": "asdas",
+    "Email": "Z",
+    "Password": "as",
+    "Id": 17,
+    "CreatedAt": "2023-09-27T12:10:58.8116045Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "ertyui",
+    "LastName": "ytfuyg",
+    "Email": "tftfy",
+    "Password": "11",
+    "Id": 18,
+    "CreatedAt": "2023-09-27T18:10:04.0496556Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "asdf",
+    "LastName": "sdfgh",
+    "Email": "esdfgh",
+    "Password": "22",
+    "Id": 19,
+    "CreatedAt": "2023-09-28T06:34:25.4907584Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "shiuda",
+    "LastName": "hbdsan",
+    "Email": "bdwhni",
+    "Password": "12",
+    "Id": 20,
+    "CreatedAt": "2023-09-30T13:28:15.4881124Z",
+    "UpdatedAt": null
+  },
+  {
+    "FirstName": "avazbek",
+    "LastName": "Abdumajidov",
+    "Email": "abdumajidov@gmail.com",
+    "Password": "123",
+    "Id": 21,
+    "CreatedAt": "2023-10-01T04:34:15.532489Z",
+    "UpdatedAt": null
   }
 ]

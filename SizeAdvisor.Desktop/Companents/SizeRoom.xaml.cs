@@ -19,7 +19,7 @@ namespace SizeAdvisor.Desktop.Companents
                 MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
                 decimal height = decimal.Parse(mainWindow.Balanlik.Text);
                 decimal weight = decimal.Parse(mainWindow.Ogirlik.Text);
-
+             
                 string[] sizes = CalculateSizes(height, weight);
                 futbolkaSize.Text = sizes[0].ToString();
                 shimSize.Text = sizes[1].ToString();
@@ -55,12 +55,12 @@ namespace SizeAdvisor.Desktop.Companents
                 sizes[0] = futbolkaRazmerlari[3];
                 sizes[1] = shimRazmerlari[3];
             }
-            else if (height > 155 && weight > 55 || height <= 165 && weight <= 60)
+            else if (height > 155 && weight > 55 && height <= 165 && weight <= 60)
             {
                 sizes[0] = futbolkaRazmerlari[4];
                 sizes[1] = shimRazmerlari[4];
             }
-            else if (height > 165 && weight > 80 || height <= 175 && weight <= 100)
+            else if (height > 165 && weight > 80 && height <= 175 && weight <= 100)
             {
                 sizes[0] = futbolkaRazmerlari[5];
                 sizes[1] = shimRazmerlari[5];
@@ -70,7 +70,7 @@ namespace SizeAdvisor.Desktop.Companents
                 sizes[0] = futbolkaRazmerlari[6];
                 sizes[1] = shimRazmerlari[6];
             }
-            else if (height > 190 || weight > 100 || height <= 200  ||weight <= 120)
+            else if (height > 190 && weight > 100 && height <= 200 && weight <= 120)
             {
                 sizes[0] = futbolkaRazmerlari[7];
                 sizes[1] = shimRazmerlari[7];
