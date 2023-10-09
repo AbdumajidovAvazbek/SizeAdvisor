@@ -15,24 +15,9 @@ namespace SizeAdvisor.Service.Services
     public class UserService : IUserService
     {
         private readonly IRepository<User> userRepository = new Repository<User>();
-        private long _id;
-        public async Task GenerateIdAsync()
-        {
-            var users = await userRepository.SelectAllAsync();
-            if (users.Count == 0)
-            {
-                this._id = 1;
-            }
-            else
-            {
-                var user = users[users.Count - 1];
-                this._id = ++user.Id;
-            }
-        }
         public async Task<bool> RemoveAsync(long id)
         {
             var user = userRepository.SelecttByIdAsync(id);
-
             if (user is null)
                 throw new CustomException(404, "User is not found");
             await userRepository.DeleteAsync(id);
@@ -41,7 +26,7 @@ namespace SizeAdvisor.Service.Services
         }
         public async Task<bool> IsThereAsync(ForCheckedDto dto)
         {
-            List<User> users = await userRepository.SelectAllAsync();
+            var users = userRepository.SelectAll();
             var available = users.FirstOrDefault(u => u.Email == dto.email && u.Password == dto.password);
             if (available is null)
                 throw new CustomException(404, "User is not found");
@@ -49,13 +34,12 @@ namespace SizeAdvisor.Service.Services
         }
         public async Task<List<UserForResultDto>> GetAllAsync()
         {
-            List<User> users = await userRepository.SelectAllAsync();
+            IQueryable<User> users =  userRepository.SelectAll();
             List<UserForResultDto> userRezults = new List<UserForResultDto>();
             foreach (var user in users)
             {
                 UserForResultDto result = new UserForResultDto()
                 {
-                    Id = user.Id,
                     Email = user.Email,
                     LastName = user.LastName,
                     FirstName = user.FirstName,
@@ -72,15 +56,13 @@ namespace SizeAdvisor.Service.Services
                 throw new CustomException(404, "User is not found");
             var userResult = new UserForResultDto()
             {
-                Id = user.Id,
                 Email = user.Email,
                 LastName = user.LastName,
                 FirstName = user.FirstName,
             };
-
-            throw new NotImplementedException();
+            return userResult;
         }
-       
+
         public async Task<UserForResultDto> UpdateAsync(UserForUpdate dto)
         {
             var user = await userRepository.SelecttByIdAsync(dto.Id);
@@ -88,7 +70,6 @@ namespace SizeAdvisor.Service.Services
                 throw new CustomException(404, "User is not found");
             var user1 = new User()
             {
-                Id = dto.Id,
                 Email = dto.Email,
                 LastName = dto.LastName,
                 FirstName = dto.FirstName,
@@ -97,7 +78,7 @@ namespace SizeAdvisor.Service.Services
             await userRepository.UpdateAsync(user1);
             var userResult = new UserForResultDto()
             {
-                Id = dto.Id,
+                Id = user1.Id,
                 Email = dto.Email,
                 LastName = dto.LastName,
                 FirstName = dto.FirstName,
@@ -106,24 +87,22 @@ namespace SizeAdvisor.Service.Services
         }
         public async Task<UserForResultDto> CreateAsync(UserForCreationDto dto)
         {
-            var user = (await userRepository.SelectAllAsync()).
+            var user =  userRepository.SelectAll().
                 FirstOrDefault(u => u.Email == dto.Email);
             if (user is not null)
                 throw new CustomException(409, "User is already exist");
-            await GenerateIdAsync();
+
             User user1 = new User()
             {
-                Id = _id,
                 Email = dto.Email,
                 LastName = dto.LastName,
                 FirstName = dto.FirstName,
                 Password = dto.Password,
-               
             };
             await userRepository.InsertAsync(user1);
             UserForResultDto result = new UserForResultDto()
             {
-                Id = _id,
+                Id = user1.Id,
                 Email = dto.Email,
                 LastName = dto.LastName,
                 FirstName = dto.FirstName,

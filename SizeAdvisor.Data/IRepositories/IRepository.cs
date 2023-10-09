@@ -10,8 +10,8 @@ namespace SizeAdvisor.Data.IRepositories
     {
         public Task<TEntity> InsertAsync(TEntity entity);
         public Task<TEntity> UpdateAsync(TEntity entity);
-        public Task<bool> DeleteAsync(long Id);
-        public Task<TEntity> SelecttByIdAsync(long Id);
-        public Task<List<TEntity>> SelectAllAsync();
+        public Task<bool> DeleteAsync(long id);
+        public Task<TEntity> SelecttByIdAsync(long id);
+        public IQueryable<TEntity> SelectAll();
     }
 }

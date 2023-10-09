@@ -13,3 +13,20 @@ C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.
 C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Data\obj\Debug\net6.0\refint\SizeAdvisor.Data.dll
 C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.pdb
 C:\Desktop\New folder\SizeAdvisor\SizeAdvisor.Data\obj\Debug\net6.0\ref\SizeAdvisor.Data.dll
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.csproj.AssemblyReference.cache
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.AssemblyInfoInputs.cache
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.AssemblyInfo.cs
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.csproj.CoreCompileInputs.cache
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.dll
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\refint\SizeAdvisor.Data.dll
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.pdb
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Data.deps.json
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Data.runtimeconfig.json
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Data.dll
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Data.pdb
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Domain.dll
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\bin\Debug\net6.0\SizeAdvisor.Domain.pdb
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.csproj.CopyComplete
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\SizeAdvisor.Data.genruntimeconfig.cache
+C:\Desktop\New folder\SizeAdvisor - Copy\SizeAdvisor.Data\obj\Debug\net6.0\ref\SizeAdvisor.Data.dll
